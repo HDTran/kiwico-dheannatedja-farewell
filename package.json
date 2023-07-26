@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next --openssl-legacy-provider dev",
-    "build": "next --openssl-legacy-provider build",
-    "start": "next --openssl-legacy-provider start"
+    "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start"
   },
   "engines": {
     "node": "16.x"
